@@ -1,0 +1,1193 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.colore {
+    color: #c7d40b;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #c7d40b;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 8px;
+    height: 10px;
+  }
+
+
+/*HEADER*/
+.responsive-sm h1{
+    font-size: 2.7em !important;
+    text-shadow: -2px 2px 4px black;
+}
+.responsive-sm h2 {
+text-shadow: -2px 2px 4px black;
+}
+.img-sf {
+    background-image: url("img/header.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 700px;
+}
+.logo {
+    width: 140px;
+    height: 80px;
+    margin-left: 5vw;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+.banner-bando {
+    background: linear-gradient(to right,  #9cb400 35%,  #baf50763 50%);
+    position: absolute;
+    width: 100%;
+    top: 450px;
+    height: 250px;
+    color: white;
+}
+.parag {
+    font-weight:bolder;
+}
+.parag-2 {
+    font-size: 16px;
+    line-height: 2;
+}
+.logo-lombardia {
+    width: 120px;
+    margin-top: 5px;
+}
+
+
+/*SEZIONE 1 CARD*/
+.card-front {
+    display: none;
+    width: 0;
+    height: 0;
+}
+.card-section:hover .card-front {
+    display: none;
+}
+.ul-list li {
+    list-style-type: none;
+}
+.ul-list-2 span{
+    color: #9cb400;
+    margin-right: 5px;
+    margin-left: -30px;
+}
+.card-section:hover span {
+    color:white;
+}
+.icon-list{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: -30px;
+    background-image: url('img/icon-v.png');
+    background-size: 100%;
+    background-position: center ;
+}
+.card-section:hover .icon-list {
+    background-image: url('img/icon-b.png');
+} 
+.txt-card-cs {
+    padding: 7% 10%;
+}
+.card-section h3 {
+    color: #9cb400;
+}
+.card-section:hover h3 {
+    color: white;
+}
+.card-section:hover {
+    background-color: #9db400;
+    color: white;
+}
+.icon-rivolge {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-omini-v.png');
+    background-size: 100%;
+    margin-left: -10px;
+}
+.card-section:hover .icon-rivolge {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-omini-b.png');
+    background-size: 100%;
+    background-size: 110%;
+}
+.icon-finanzia {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-grafico-v.png');
+    background-size: 100%;
+    margin-left: -10px;
+}
+.card-section:hover .icon-finanzia {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-grafico-b.png');
+    background-size: 100%;
+    background-size: 110%;
+}
+.icon-agevola {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-mani-v.png');
+    background-size: 100%;
+    margin-left: -10px;
+}
+.card-section:hover .icon-agevola {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/icon-mani-b.png');
+    background-size: 100%;
+    background-size: 110%;
+}
+
+/* BANNER 2 */
+.banner {
+    height: 320px;
+    background-image: url("img/banner-1.jpg");
+    background-size: 100% 320px;
+    background-position: center ;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.banner-sx-1 {/* 
+    background: linear-gradient(to right,  #dce4e5 45%,  #dce4e5c8 50%, #ffffff00 55%);
+  */   height: 320px;
+    width: 100%;
+}
+
+/* BANNER 3 */
+.banner-2 {
+    height: 320px;
+    background-image: url("img/banner-2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat; 
+    margin: 0;
+}
+.bottone-banner {
+    padding-top: 10%;
+}
+.banner-2-txt {
+    background-color:#ecf0f1;
+}
+ .banner-sx-2 {/* 
+    background: linear-gradient(to right,  #a7b3be 20%, #c0cfd9 30%, #bccbd4 62%, #c0cfd900 70%);
+  */   height: 320px;
+    width: 100%;
+    display: flexbox;
+    flex-direction: row;
+} 
+
+/*BOTTONI BANNER*/
+.btn-1 {
+    border-color: #c7d40b;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #c7d40b inset, 0 0 0 0 #c7d40b;
+    transition: all 250ms ease-in-out;
+  }
+.btn-1:hover {
+    box-shadow: 0 0 10px 0 #c7d40b inset, 0 0 10px 4px #c7d40b;
+    background-color: #fff;
+}
+.txt-btn {
+    margin: 0 ;
+    border-radius: 0;
+}
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s steps(2, end) infinite ;
+	        animation: heartbeat 1.5s steps(2, end) infinite ;
+}
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+}
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+}
+
+
+/*FORM*/
+
+.form-control {
+    border: 0 !important;
+    border-bottom: 3px solid #c7d40b !important;
+    border-radius: 0;
+}
+.form-control:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none;
+  }
+.form-check-input {
+    border: 1px solid rgb(104, 103, 103) !important;
+    cursor: pointer;
+    border-radius: 3px !important;
+}
+.btn-form {
+    background-color: #181818;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #181818;
+}
+
+
+/*
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+RESPONSIVE 
+*/ 
+@media only screen and (min-width: 991px) and (max-width: 1240px) {
+    .img-sf{
+        background-image: url("img/header.jpg");
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        height: 600px;
+    }
+} 
+
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+/*HEADER*/
+.responsive-sm h1{
+    font-size: 2em !important;
+    text-shadow: -2px 2px 4px black;
+}
+.responsive-sm h2 {
+text-shadow: -2px 2px 4px black;
+}
+.img-sf {
+    background-image: url("img/header.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 600px;
+}
+.logo {
+    width: 140px;
+    height: 80px;
+    margin-left: 5vw;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+.banner-bando {
+    background: #9cb400bb;
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    height: 200px;
+    color: white;
+    padding: 20px 0 !important;
+}
+.parag {
+    font-weight:bolder;
+    
+    text-shadow: 4px 4px 4xp black;
+    line-height: 1;
+}
+.parag-2 {
+    font-size: 16px;
+    line-height: 1;
+}
+.logo-lombardia {
+    width: 100px;
+    margin-top: -10px;
+    float: right;
+    padding-right: 0;
+}
+    /* BANNER 2 */
+.banner {
+    height: 300px;
+    background-image: url("img/banner-1.jpg");
+    background-size: 100% 300px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.banner-sx-1 {/* 
+    background: linear-gradient(to right,  #dce4e5f9 45%,  #dce4e5 55%, #ffffff00 60%);
+     */height: 300px;
+    width: 100%;
+    padding: 0 !important;
+    line-height: 1.2;
+}
+/*SEZIONE CHI SIAMO*/
+.responsive-sm-1 {
+    line-height: 1.2;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*HEADER*/
+.responsive-sm h1{
+    font-size: 2em !important;
+    text-shadow: -2px 2px 4px black;
+}
+.responsive-sm h2 {
+text-shadow: -2px 2px 4px black;
+padding-right: 35%;
+}
+.img-sf {
+    background-image: url("img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 600px;
+}
+.logo {
+    width: 140px;
+    height: 80px;
+    margin-left: 5vw;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+.banner-bando {
+    background: #9cb400bb;
+    position: absolute;
+    width: 100%;
+    top: 355px;
+    height: 200px;
+    color: white;
+    padding: 20px 0 !important;
+}
+.parag {
+    font-weight:bolder;
+    
+    text-shadow: 4px 4px 4xp black;
+    line-height: 1;
+}
+.parag-2 {
+    font-size: 16px;
+    line-height: 1;
+}
+.logo-lombardia {
+    width: 100px;
+    margin-top: -10px;
+    float: right;
+    padding-right: 0;
+}
+
+
+/*SEZIONE 1 CARD*/
+
+.card-section {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.352);
+    margin-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+/* BANNER 2 */
+.banner {
+    height: 300px;
+    background-image: url("img/banner-1.jpg");
+    background-size: 100% 300px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.banner-sx-1 {/* 
+    background: linear-gradient(to right,  #dce4e5f9 45%,  #dce4e57d 50%, #ffffff00 55%);
+     */height: 300px;
+    width: 100%;
+}
+/*SEZIONE CHI SIAMO*/
+.chi-siamo {
+    text-align: center;
+}
+.card-img-chisiamo-smartphone {
+    display: none !important;
+}
+.txt-card-cs {
+    padding: 7% 0;
+}
+/* BANNER 3 */
+.banner-2 {
+    height: 320px;
+    background-image: url("img/banner-2.jpg");
+    background-size: auto 320px;
+    background-position: right;
+    width: 100%;
+    background-repeat: no-repeat; 
+    margin: 0;
+}
+.bottone-banner {
+    padding-top: 0;
+}
+ .banner-sx-2 {/* 
+    background: linear-gradient(to right,  #a7b3be 20%, #c0cfd9fc 45%, #c0cfd9fd 55%,  #c0cfd900 60%);
+   */  height: 320px;
+    width: 100%;
+    padding-right: 50%;
+    padding-left: 3%;
+    line-height: 1.2;
+} 
+
+}
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    
+/*HEADER*/
+.responsive-sm h1{
+    font-size: 2em !important;
+    text-shadow: -2px 2px 4px black;
+}
+.responsive-sm h2 {
+text-shadow: -2px 2px 4px black;
+padding-right: 45%;
+}
+.img-sf {
+    background-image: url("img/header-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 600px;
+}
+.logo {
+    width: 140px;
+    height: 80px;
+    margin-left: 5vw;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+.banner-bando {
+    background: #9cb400bb;
+    position: absolute;
+    width: 100%;
+    top: 385px;
+    height: 200px;
+    color: white;
+    padding: 20px 0 !important;
+}
+.parag {
+    font-weight:bolder;
+    
+    text-shadow: 4px 4px 4xp black;
+    line-height: 1;
+}
+.parag-2 {
+    font-size: 16px;
+    line-height: 1;
+}
+.logo-lombardia {
+    width: 100px;
+    margin-top: -10px;
+    float: right;
+    padding-right: 0;
+}
+
+
+/*SEZIONE 1 CARD*/
+
+.card-section {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.352);
+    margin-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+/* BANNER 2 */
+.banner {
+    height: 300px;
+    background-image: url("img/banner-1.jpg");
+    background-size: 100% 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-sx-1 {/* 
+    background: linear-gradient(to right,  #dce4e5f9 45%,  #dce4e57d 50%, #ffffff00 55%);
+    */ height: 300px;
+    width: 100%;
+}
+/*SEZIONE CHI SIAMO*/
+.chi-siamo {
+    text-align: center;
+}
+.card-img-chisiamo-smartphone {
+    display: none;
+}
+.txt-card-cs {
+    padding: 7% 0;
+}
+/* BANNER 3 */
+.banner-2 {
+    height: 320px;
+    background-image: url("img/banner-2.jpg");
+    background-size: auto 320px;
+    background-position: right;
+    width: 100%;
+    background-repeat: no-repeat; 
+    margin: 0;
+}
+.bottone-banner {
+    padding-top: 0;
+}
+.banner-2-txt {
+    background-color:#ecf0f1;
+}
+ .banner-sx-2 {
+    background: linear-gradient(to right,  #a7b3be 20%, #c0cfd9fc 45%, #c0cfd96e 50%,  #c0cfd90e 55%);
+    height: 320px;
+    width: 100%;
+    padding-right: 50%;
+    line-height: 1.2;
+} 
+
+.ft-smartphone-logo {
+    margin-top: 100px;
+}
+
+}
+
+@media only screen and (min-width: 359px) and (max-width: 576px) {
+
+        /*HEADER*/
+    .responsive-sm h1{
+        font-size: 2.2em !important;
+        text-shadow: -2px 2px 4px black;
+        padding-right: 30%;
+    }
+    .responsive-sm h2 {
+        position: absolute;
+        background: #9cb40095;
+        margin: 0 0 0 -20px;
+        width: auto;
+        height: 18vh;
+        top: 43vh;
+        overflow: visible;
+        text-shadow: none;
+        font-size: 1em !important;
+        padding: 0 40% 0 20px;
+    }
+    .img-sf {
+        background-image: url("img/header-mobile.jpg");
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 61vh;
+    }
+    .logo {
+        width: 120px;
+        height: 50px;
+        margin-left: -25px;
+        display: block;
+        float: left;
+    }
+    .banner-bando {
+        background: #181818;
+        top: 58.5vh;
+        height: 35vh;
+        padding-right: 25%;
+    }
+    .parag-2 {
+        font-size: 0.9em;
+        line-height: 1;
+    }
+    .parag {
+        font-size: 1.2em !important;
+        font-weight:400;
+        line-height: 1;
+        padding-top: 10px;
+    }
+    .banner-bando h3 {
+        
+        color: #9cb400 !important;
+        font-size: 1.3em !important;
+        line-height: 1;
+    }
+    .logo-lombardia {
+        width: 100px;
+        margin-top: -10px;
+        float: right;
+        margin-right: -100px;
+        padding-right: 0;
+    }
+
+    /*SEZIONE 1 CARD*/
+    .card-section-container {
+        margin-top: 33vh;
+    }
+    .card-section {
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.352);
+        margin-bottom: 3px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+    .flip-2-ver-left-fwd {/* 
+        -webkit-animation: flip-2-ver-left-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2.5s both;
+        animation: flip-2-ver-left-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2.5s both;  */
+         animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards; 
+         -moz-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+         -webkit-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+         -o-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+    }
+    @-webkit-keyframes flip-2-ver-left-fwd {
+        0% {
+        -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -webkit-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+        }
+        50% {
+        -webkit-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+        }
+        100% {
+            -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -webkit-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+        }
+    }
+    @-o-keyframes flip-2-ver-left-fwd {
+        0% {
+            -o-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -o-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+            }
+            50% {
+            -o-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                    transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+            -ot-transform-origin: 100% 0%;
+                    transform-origin: 100% 0%;
+            }
+            100% {
+                -o-transform: translateX(0) translateZ(0) rotateY(0);
+                        transform: translateX(0) translateZ(0) rotateY(0);
+                -o-transform-origin: 0% 50%;
+                        transform-origin: 0% 50%;
+            }
+    }
+    @-moz-keyframes flip-2-ver-left-fwd {
+        0% {
+            -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -moz-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+            }
+            50% {
+            -moz-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                    transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+            -moz-transform-origin: 100% 0%;
+                    transform-origin: 100% 0%;
+            }
+            100% {
+                -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                        transform: translateX(0) translateZ(0) rotateY(0);
+                -moz-transform-origin: 0% 50%;
+                        transform-origin: 0% 50%;
+            }
+    }
+    @keyframes flip-2-ver-left-fwd {
+        0% {
+        -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+        -o-transform: translateX(0) translateZ(0) rotateY(0);
+        -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -webkit-transform-origin: 0% 50%;
+        -o-transform-origin: 0% 50%;
+        -moz-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+        }
+        50% {
+        -webkit-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -o-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -moz-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -webkit-transform-origin: 100% 0%;
+        -o-transform-origin: 100% 0%;
+        -moz-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+        }
+        100% {
+            -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+            -o-transform: translateX(0) translateZ(0) rotateY(0);
+            -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -webkit-transform-origin: 0% 50%;
+            -o-transform-origin: 0% 50%;
+            -moz-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+        }
+    } 
+  .card-front {
+    display: block;
+    background-color: #9cb400;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+  }
+  .nascosto {
+    display:none;
+  }
+  .icon-rivolge-front {
+    width: 200px;
+    height: 200px;
+    background-image: url('img/icon-omini-b.png');
+    background-size: 100%;
+    margin-top: 15%;
+    margin-left: 22%;
+}
+.icon-finanzia-front {
+    width: 200px;
+    height: 200px;
+    background-image: url('img/icon-grafico-b.png');
+    background-size: 100%;
+    margin-top: 20%;
+    margin-left: 18%;
+}
+.icon-agevola-front {
+    width: 200px;
+    height: 200px;
+    background-image: url('img/icon-mani-b.png');
+    background-size: 100%;
+    margin-top: 20%;
+    margin-left: 18%;
+}
+/* BANNER 2 */
+.banner {
+    height: 220px;
+    background-size: 100% 220px;
+}
+.banner-sx-1 {/* 
+    background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5dd 55%, #ffffff00 65%);
+    */ height: 220px;
+    width: 100%;
+    line-height: 1.3;
+    padding-right: 0%;
+    padding-top: 0;
+}
+.banner-sx-1 p {
+    font-size: 1.3em !important;
+}
+/*SEZIONE CHI SIAMO*/
+.chi-siamo {
+    text-align: center;
+}
+.responsive-sm-1 p:nth-child(2) {
+    line-height: 1.3;
+}
+.responsive-sm-1 p:nth-child(3) {
+    line-height: 1.3;
+}
+.card-img-chisiamo-smartphone {
+    display: none;
+}
+.txt-card-cs {
+    padding: 30px 0 25px 0;
+    line-height: 1.3;
+}
+
+/* BANNER 3 */
+.banner-2 {
+    height: 550px;
+    background-image: url("img/banner-2-mobile.jpg");
+    background-size:  100% 300px;
+    background-position: right bottom;
+    width: 100%;
+    background-repeat: no-repeat; 
+}
+.bottone-banner {
+    padding-top: 0;
+}
+.banner-2-txt {
+    background-color:#ecf0f1;
+}
+ .banner-sx-2 {
+    background:  #c8d0d6;
+    margin-top: 0px;
+    height: 250px;
+    padding: 0 20px 20px 0;
+    width: auto;
+    line-height: 1.2;
+    text-align: center;
+} 
+
+/*FORM*/
+.check label{
+    margin-top: -20px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #181818;
+}
+.ft-smartphone-logo  img {
+    margin: 140px 0 0 0;
+
+    width: 100px;
+}
+}
+
+@media only screen and (max-width: 358px) {
+
+/* div {
+    border: 1px solid black;
+} */
+    /*HEADER*/
+.responsive-sm h1{
+    font-size: 1.5em !important;
+    text-shadow: -2px 2px 4px black;
+    padding-right: 20%;
+}
+.responsive-sm h2 {
+    position: absolute;
+    background: #9cb400cb;
+    margin: 0 0 0 -30px;
+    width: auto;
+    height: 120px;
+    top: 250px;
+    overflow: visible;
+    text-shadow: none;
+    font-size: 0.9em !important;
+    padding: 0 10% 0 10%;
+}
+.img-sf {
+    background-image: url("img/header-mobile.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 600px;
+}
+.logo {
+    width: 100px;
+    height: 50px;
+    margin-left: -25px;
+    display: block;
+    float: left;
+}
+.banner-bando {
+    background: #181818;
+    top: 350px;
+    height: 250px;
+    width: 100%;
+}
+.parag-2 {
+    font-size: 0.8em;
+    line-height: 1.1;
+}
+.parag {
+    font-size: 0.8em !important;
+    font-weight:400;
+    line-height: 1.2;
+    padding-top: 10px;
+}
+.banner-bando h3 {
+    color: #9cb400 !important;
+    font-size: 1em !important;
+    line-height: 1;
+}
+.logo-lombardia {
+    width: 100px;
+    float: right;
+}
+
+/*SEZIONE 1 CARD*/
+.card-section-container {
+    margin-top: 0;
+}
+.card-section {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.352);
+    margin-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.flip-2-ver-left-fwd {/* 
+    -webkit-animation: flip-2-ver-left-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2.5s both;
+    animation: flip-2-ver-left-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2.5s both;  */
+     animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards; 
+     -moz-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+     -webkit-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+     -o-animation: flip-2-ver-left-fwd 0.5s ease-in-out 2.5s forwards;
+}
+@-webkit-keyframes flip-2-ver-left-fwd {
+    0% {
+    -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+            transform: translateX(0) translateZ(0) rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    }
+    50% {
+    -webkit-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+            transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+    100% {
+        -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -webkit-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+    }
+}
+@-o-keyframes flip-2-ver-left-fwd {
+    0% {
+        -o-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -o-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+        }
+        50% {
+        -o-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -ot-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+        }
+        100% {
+            -o-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -o-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+        }
+}
+@-moz-keyframes flip-2-ver-left-fwd {
+    0% {
+        -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -moz-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+        }
+        50% {
+        -moz-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+                transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+        -moz-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+        }
+        100% {
+            -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                    transform: translateX(0) translateZ(0) rotateY(0);
+            -moz-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+        }
+}
+@keyframes flip-2-ver-left-fwd {
+    0% {
+    -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+    -o-transform: translateX(0) translateZ(0) rotateY(0);
+    -moz-transform: translateX(0) translateZ(0) rotateY(0);
+            transform: translateX(0) translateZ(0) rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    }
+    50% {
+    -webkit-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+    -o-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+    -moz-transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+            transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+    -webkit-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+    100% {
+        -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+        -o-transform: translateX(0) translateZ(0) rotateY(0);
+        -moz-transform: translateX(0) translateZ(0) rotateY(0);
+                transform: translateX(0) translateZ(0) rotateY(0);
+        -webkit-transform-origin: 0% 50%;
+        -o-transform-origin: 0% 50%;
+        -moz-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+    }
+} 
+.card-front {
+display: block;
+background-color: #9cb400;
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+text-align: center;
+}
+.nascosto {
+display:none;
+}
+.icon-rivolge-front {
+width: 200px;
+height: 200px;
+background-image: url('img/icon-omini-b.png');
+background-size: 100%;
+margin-top: 15%;
+margin-left: 22%;
+}
+.icon-finanzia-front {
+width: 200px;
+height: 200px;
+background-image: url('img/icon-grafico-b.png');
+background-size: 100%;
+margin-top: 20%;
+margin-left: 18%;
+}
+.icon-agevola-front {
+width: 200px;
+height: 200px;
+background-image: url('img/icon-mani-b.png');
+background-size: 100%;
+margin-top: 20%;
+margin-left: 18%;
+}
+/* BANNER 2 */
+.banner {
+height: 220px;
+background-size: 100% 220px;
+}
+.banner-sx-1 {/* 
+background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5dd 55%, #ffffff00 65%);
+ */height: 220px;
+width: 100%;
+line-height: 1;
+padding-right: 0%;
+padding-top: 0;
+}
+.banner-sx-1 p {
+font-size: 1.2em !important;
+}
+/*SEZIONE CHI SIAMO*/
+.chi-siamo {
+text-align: center;
+}
+.responsive-sm-1 p:nth-child(2) {
+line-height: 1.3;
+}
+.responsive-sm-1 p:nth-child(3) {
+line-height: 1.3;
+}
+.card-img-chisiamo-smartphone {
+display: none;
+}
+.txt-card-cs {
+padding: 30px 0 25px 0;
+line-height: 1.3;
+}
+
+/* BANNER 3 */
+.banner-2 {
+height: 500px;
+background-image: url("img/banner-2-mobile.jpg");
+background-size:  100% 200px;
+background-position: right bottom;
+width: 100%;
+background-repeat: no-repeat; 
+}
+.bottone-banner {
+padding-top: 0;
+padding-bottom: 10px;
+}
+.banner-2-txt {
+background-color:#ecf0f1;
+}
+.banner-sx-2 {
+background:  #c8d0d6;
+margin-top: 0px;
+height: 300px;
+padding: 0 20px 0 10px;
+width: auto;
+line-height: 1;
+text-align: center;
+} 
+/*FORM*/
+.check label{
+margin-top: -20px;
+}
+
+/*FOOTER*/
+footer {
+background-color: #181818;
+}
+.ft-smartphone-logo  img {
+margin: 220px 0 0 0;
+width: 100px;
+}
+}
