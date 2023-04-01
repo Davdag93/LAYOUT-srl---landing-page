@@ -24,11 +24,13 @@
 
 /*HEADER*/
 .responsive-sm h1{
-    font-size: 2.7em !important;
+    font-size: 3em !important;
     text-shadow: -2px 2px 4px black;
+    width: 110%;
 }
 .responsive-sm h2 {
-text-shadow: -2px 2px 4px black;
+    font-size: 2em;
+    text-shadow: -2px 2px 4px black;
 }
 .img-sf {
     background-image: url("img/header.jpeg");
@@ -91,7 +93,7 @@ text-shadow: -2px 2px 4px black;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #9cb400;
+    background-color: #c7d40b;
 }
 .icon-rivolge-front {
     width: 200px;
@@ -143,7 +145,7 @@ text-shadow: -2px 2px 4px black;
     float: right;
 }
 .icon-list{
-    color: #9cb400;
+    color: #c7d40b;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -217,36 +219,55 @@ text-shadow: -2px 2px 4px black;
     width: 100%;
 }
 .banner-sx-1 {
-    background: linear-gradient(to right,  #dce4e5 45%,  #dce4e5 62%, #ffffff00 68%);
+    background: linear-gradient(to right,  #dce4e5 45%,  #dce4e5 52%, #ffffff00 55%);
     height: 320px;
     width: 100%;
+}
+.txt-banner-2-primary {
+    font-size: 2em;
+    font-weight: 900;
+    padding-right: 70% !important;
+}
+.txt-banner-2-secondary {
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-right: 70% !important;
 }
 
 /* BANNER 3 */
 .banner-2 {
     height: 320px;
     background-image: url("img/banner-2.jpg");
-    background-size: auto 100%;
-    background-position: center right;
+    background-size: auto 140%;
+    background-position: top right ; 
     width: 100%;
     background-repeat: no-repeat; 
     margin: 0;
-    z-index: 1;
 }
 .bottone-banner {
-    padding-top: 10%;
+    position: relative;
+    top: -70px;
+    left: 55%;
 }
 .banner-2-txt {
     background-color:#ecf0f1;
 }
  .banner-sx-2 { 
-    background: linear-gradient(to right,  #19191a 20%, #19191a 30%, #19191a 53%, #19191a 66%, #00000000 74%);
+    background: linear-gradient(to right,  #19191a 20%, #19191a 30%, #19191a 53%, #19191a 56%, #00000000 64%);
     height: 320px;
     width: 100%;
-    display: flexbox;
-    flex-direction: row;
 } 
-
+.txt-banner-3-primary {
+    font-size: 2em;
+    font-weight: 900;
+    padding-bottom: 20px;
+    padding-right: 50%;
+}
+.txt-banner-3-secondary {
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-right: 50%;
+}
 /*BOTTONI BANNER*/
 .btn-1 {
     border-color: red;
@@ -368,16 +389,185 @@ footer {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 RESPONSIVE 
 */ 
- 
+@media only screen and (min-width: 768px) {
+    .banner-bando h3 {
+        padding-left: 5px !important;
+    }
+    .parag {
+        padding-left: 5px !important;
+    }
+}
+@media only screen and (min-width: 1401px) and (max-width: 1650px) {
+    /* BANNER 3 */
+.banner-2 {
+    background-position: top right -100px; 
+}
+}
+@media only screen and (min-width: 1400px) {
+    /* BANNER 3 */
+    .col-xxxl {
+        width: 1150px;
+    }
+}
 
-@media only screen and (min-width: 992px) and (max-width: 1999px) {
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+.banner-2 {
+    background-position: top right -120px; 
+}
+.bottone-banner {
+    left: 50%;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .banner-sx-2 {
+        margin-left: -30px;
+    }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1299px) {
+    .banner-2 {
+        background-position: top right -200px; 
+    }
+    .txt-banner-3-primary {
+        padding-right: 40%;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1149px) {
+    .banner-2 {
+        background-position: top right -250px; 
+    }
+    .txt-banner-3-primary {
+        padding-right: 35%;
+    }
+    .txt-banner-3-secondary {
+        padding-right: 45%;
+    }
+    .bottone-banner {
+        left: 55%;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1050px) {
+    .colonna-1 {
+        margin-left: -50px;
+    }
+    .txt-banner-3-primary {
+        padding-right: 30%;
+    }
+}
+
+
+@media only screen and (min-width: 1500px) and (max-width: 1999px) {
+    /* BANNER 2 */
+    .banner {
+        height: 300px;
+        background-size: auto 298px;
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .banner-sx-1 { 
+        background: linear-gradient(to right,  #dce4e5f9 25%,  #dce4e5fa 48%, #ffffff00 55%);
+        height: 300px;
+        width: 100%;
+        padding: 0 !important;
+        line-height: 1.2;
+        padding-left: 30px !important; 
+    }
+    .txt-banner-2-primary {
+        font-size: 2em;
+        font-weight: 900;
+        padding-right: 60% !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .txt-banner-2-secondary {
+        font-size: 1.6em;
+        font-weight: 800;
+        padding-right: 70% !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px) {
+    /* BANNER 2 */
+    .banner {
+        height: 300px;
+        background-size: auto 298px;
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .banner-sx-1 { 
+        background: linear-gradient(to right,  #dce4e5f9 25%,  #dce4e5fa 48%, #ffffff00 55%);
+        height: 300px;
+        width: 100%;
+        padding: 0 !important;
+        line-height: 1.2;
+        margin-left: 0px !important;
+    }
+    .txt-banner-2-primary {
+        font-size: 2em;
+        font-weight: 900;
+        padding-right: 60% !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .txt-banner-2-secondary {
+        font-size: 1.6em;
+        font-weight: 800;
+        padding-right: 70% !important;
+    }
+}
+@media only screen and (min-width: 1241px) and (max-width: 1330px) {
+    /* BANNER 2 */
+    .banner {
+        height: 300px;
+        background-size: auto 298px;
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .banner-sx-1 { 
+        background: linear-gradient(to right,  #dce4e5f9 25%,  #dce4e5fa 48%, #ffffff00 55%);
+        height: 300px;
+        width: 100%;
+        padding: 0 !important;
+        line-height: 1.2;
+        margin-left: -40px !important;
+    }
+    .txt-banner-2-primary {
+        font-size: 2em;
+        font-weight: 900;
+        padding-right: 60% !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .txt-banner-2-secondary {
+        font-size: 1.6em;
+        font-weight: 800;
+        padding-right: 70% !important;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1400px) {
+    /*HEADER*/
+    .responsive-sm h1{
+        font-size: 2.5em !important;
+        margin-top: -20px !important;
+    }
+    .responsive-sm h2{
+        font-size: 1.6em !important;
+        width: 60% !important;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1999px) {
 /*HEADER*/
 .responsive-sm h1{
-    font-size: 2em !important;
+    font-size: 2.8em !important;
     text-shadow: -2px 2px 4px black;
 }
-.responsive-sm h2 {
-text-shadow: -2px 2px 4px black;
+.responsive-sm h2{
+    font-size: 1.9em !important;
 }
 .img-sf {
     height: 600px;
@@ -415,21 +605,8 @@ text-shadow: -2px 2px 4px black;
     margin-left: 15px;
     padding-right: 0;
 }
-    /* BANNER 2 */
-.banner {
-    height: 300px;
-    background-size: auto 298px;
-    background-position: center right;
-    background-repeat: no-repeat;
-    width: 100%;
-}
-.banner-sx-1 { 
-    background: linear-gradient(to right,  #dce4e5f9 25%,  #dce4e5fa 48%, #ffffff00 55%);
-    height: 300px;
-    width: 100%;
-    padding: 0 !important;
-    line-height: 1.2;
-}
+
+
 /*SEZIONE CHI SIAMO*/
 .responsive-sm-1 {
     line-height: 1.2;
@@ -461,7 +638,7 @@ text-shadow: -2px 2px 4px black;
     }
 
     /* BANNER 2 */
-    .banner {
+     .banner {
         height: 300px;
         background-image: url("img/banner-1-mobile.jpg");
         background-size: auto 298px;
@@ -470,19 +647,41 @@ text-shadow: -2px 2px 4px black;
         width: 100%;
     }
     .banner-sx-1 { 
-        background: linear-gradient(to right,  #d9d9d9f9 25%,  #b1b1b1fa 55%, #7f7f7f 66%, #b7b6b600 68%);
         height: 300px;
         width: 100%;
-        padding: 0 !important;
+        padding: 0  !important;
         line-height: 1.2;
-    }
+        }
+        .txt-banner-2-primary {
+            font-size: 2em;
+            font-weight: 900;
+            padding-right: 60% !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+        .txt-banner-2-secondary {
+            font-size: 1.6em;
+            font-weight: 800;
+            padding-right: 65% !important;
+        }
 }
 
 
-@media only screen and (min-width: 1130px) and (max-width: 1150px) {
+
+@media only screen and (min-width: 1151px) and (max-width: 1240px) {
+    .banner-sx-1 { 
+        background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5 55%, #b1b1b1 67%, #b7b6b600 70%);
+        height: 300px;
+        width: 100%;
+        padding: 0  !important;
+        line-height: 1.2;
+        }
+}
+
+@media only screen and (min-width: 1129px) and (max-width: 1151px) {
     /* BANNER 2 */
     .banner-sx-1 { 
-        background: linear-gradient(to right,  #d9d9d9f9 25%,  #b1b1b1fa 55%, #7f7f7f 65%, #b7b6b600 67%);
+        background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5 55%, #b1b1b1 65%, #b7b6b600 69%);
         height: 300px;
         width: 100%;
         padding: 0 !important;
@@ -492,17 +691,18 @@ text-shadow: -2px 2px 4px black;
 @media only screen and (min-width: 1090px) and (max-width: 1129px) {
     /* BANNER 2 */
     .banner-sx-1 { 
-        background: linear-gradient(to right,  #d9d9d9f9 25%,  #b1b1b1fa 55%, #7f7f7f 63%, #b7b6b600 65%);
+        background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5 55%, #b1b1b1 63%, #b7b6b600 67%);
         height: 300px;
         width: 100%;
         padding: 0 !important;
-        line-height: 1.2;
+        line-height: 1.2;/* 
+        padding-left: 25px !important; */
     }
 } 
 @media only screen and (min-width: 1050px) and (max-width: 1090px) {
     /* BANNER 2 */
     .banner-sx-1 { 
-        background: linear-gradient(to right,  #d9d9d9f9 25%,  #b1b1b1fa 55%, #7f7f7f 62%, #b7b6b600 64%);
+        background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5 55%, #b1b1b1 63%, #b7b6b600 67%);
         height: 300px;
         width: 100%;
         padding: 0 !important;
@@ -512,23 +712,26 @@ text-shadow: -2px 2px 4px black;
 @media only screen and (min-width: 991px) and (max-width: 1050px) {
     /* BANNER 2 */
     .banner-sx-1 { 
-        background: linear-gradient(to right,  #d9d9d9f9 25%,  #b1b1b1fa 55%, #7f7f7f 60%, #b7b6b600 62%);
+        background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5 55%, #b1b1b1 60%, #b7b6b600 62%);
         height: 300px;
         width: 100%;
         padding: 0 !important;
+        padding-top: 20px !important;
         line-height: 1.2;
     }
 } 
 
-@media only screen and (min-width: 768px) and (max-width: 990px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 /*HEADER*/
 .responsive-sm h1{
+    margin-top: -40px;
     font-size: 2em !important;
+    width: 100%;
     text-shadow: -2px 2px 4px black;
 }
 .responsive-sm h2 {
-text-shadow: -2px 2px 4px black;
-padding-right: 35%;
+padding-right: 30%;
+font-size: 1.6em;
 }
 .img-sf {
     background-image: url("img/header.jpeg");
@@ -612,10 +815,18 @@ padding-right: 35%;
     background-position: center right -250px;
     width: 100%;
 }
-.banner-sx-1 {/* 
-    background: linear-gradient(to right,  #dce4e5f9 45%,  #bbbdbd 65%, #ffffff00 68%); */
+.banner-sx-1 {
     height: 300px;
     width: 100%;
+    padding-top: 45px !important;
+    padding-left: 35px;
+}
+
+.txt-banner-2-primary {
+    padding-right: 10% !important;
+}
+.txt-banner-2-secondary {
+    padding-right: 20% !important;
 }
 /*SEZIONE CHI SIAMO*/
 .chi-siamo {
@@ -631,35 +842,46 @@ padding-right: 35%;
 .banner-2 {
     height: 320px;
     background-image: url("img/banner-2.jpg");
-    background-size: 100% 320px;
-    background-position: right;
+    background-size: auto 120%;
+    background-position: top right -220px;
     width: 100%;
     background-repeat: no-repeat; 
     margin: 0;
 }
-.bottone-banner {
-    padding-top: 0;
-}
- .banner-sx-2 { 
-    background: linear-gradient(to right,  #19191a 20%, #19191a 30%, #242425 63%, #0e0e0eb4 66%, #00000000 72%);
+ .banner-sx-2 { /* 
+    background: linear-gradient(to right,  #19191a 20%, #19191a 30%, #242425 63%, #0e0e0eb4 66%, #00000000 72%); */
     height: 320px;
     width: 100%;
-    padding-right: 50%;
-    padding-left: 3%;
+    padding-left: 5%;
     line-height: 1.2;
 } 
-
+.txt-banner-3-primary {
+    font-size: 1.8em;
+    padding-bottom: 0px;
+    padding-right: 35%;
+}
+.txt-banner-3-secondary {
+    font-size: 1.5em;
+    padding-right: 45%;
+}
+.bottone-banner {
+    left: 35%;
+    top: 0px;
+}
+.col-md- {
+    width: 700px !important;
+}
 }
 @media only screen and (min-width: 577px) and (max-width: 767px) {
     
 /*HEADER*/
 .responsive-sm h1{
-    font-size: 2em !important;
+    font-size: 1.7em !important;
     text-shadow: -2px 2px 4px black;
 }
 .responsive-sm h2 {
-text-shadow: -2px 2px 4px black;
 padding-right: 45%;
+font-size: 1.4em;
 }
 .img-sf {
     background-image: url("img/header.jpeg");
@@ -741,19 +963,7 @@ padding-right: 45%;
     padding-bottom: 20px;
     padding-right: 20px;
 }
-/* BANNER 2 */
-.banner {
-    height: 250px;
-    background-image: url("img/banner-1.jpg");
-    background-size: auto 248px ;
-    background-position: center right -210px;
-    background-repeat: no-repeat;
-}
-.banner-sx-1 {
-    background: none; 
-    height: 250px;
-    width: 100%;
-}
+
 /*SEZIONE CHI SIAMO*/
 .chi-siamo {
     text-align: center;
@@ -766,27 +976,42 @@ padding-right: 45%;
 }
 /* BANNER 3 */
 .banner-2 {
-    height: 320px;
+    height: 620px;
     background-image: url("img/banner-2.jpg");
-    background-size: auto 320px;
-    background-position: right;
-    width: 100%;
+    background-size: auto 300px;
+    background-position: bottom right;
+    width: 100vw;
     background-repeat: no-repeat; 
     margin: 0;
-}
-.bottone-banner {
-    padding-top: 0;
-}
-.banner-2-txt {
-    background-color:#ecf0f1;
+    text-align: center;
 }
  .banner-sx-2 {
-    background: linear-gradient(to right,  #a7b3be 20%, #c0cfd9fc 45%, #c0cfd96e 50%,  #c0cfd90e 55%);
-    height: 320px;
-    width: 100%;
-    padding-right: 50%;
+    background:#201E1F; 
+    height: 324px;
+    width: 100vw;
     line-height: 1.2;
+    margin: 0px !important;
+    position: relative;
+    left: -12px;
 } 
+.txt-banner-3-primary {
+    font-size: 1.8em;
+    font-weight: 900;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.txt-banner-3-secondary {
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-right: 0%;
+}
+.bottone-banner {
+    position: relative;
+    top: 15px;
+    left: 0%;
+}
+
 
 .ft-smartphone-logo {
     margin-top: 100px;
@@ -794,20 +1019,88 @@ padding-right: 45%;
 
 }
 
+@media only screen and (min-width: 627px) and (max-width: 767px) {
+    /* BANNER 2 */
+    .banner {
+        height: 250px;
+        background-image: url("img/banner-1.jpg");
+        background-size: auto 248px ;
+        background-position: center right -170px;
+        background-repeat: no-repeat;
+    }
+    .banner-sx-1 {
+        background: none; 
+        height: 250px;
+        width: 100%;
+        padding-top: 30px !important;
+        padding-left: 25px;
+    }
+
+    .txt-banner-2-primary {
+        font-size: 1.6em;
+        padding-right: 10% !important;
+    }
+    .txt-banner-2-secondary {
+        font-size: 1.3em;
+        padding-right: 15% !important;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 626px) {
+        /* BANNER 2 */
+        .banner {
+            height: 250px;
+            background-image: url("img/banner-1.jpg");
+            background-size: auto 248px ;
+            background-position: center right -170px;
+            background-repeat: no-repeat;
+        }
+        .banner-sx-1 {
+            background: none; 
+            height: 250px;
+            width: 100%;
+            padding-top: 15px !important;
+        }
+    
+        .txt-banner-2-primary {
+            font-size: 1.6em;
+            padding-right: 10% !important;
+        }
+        .txt-banner-2-secondary {
+            font-size: 1.3em;
+            padding-right: 15% !important;
+        }
+}
+@media only screen and (min-width: 358px) and (max-width: 524px) {
+        /*HEADER*/
+        .responsive-sm h1{
+            padding-right: 23% !important;
+        }
+        .responsive-sm h2 {
+            margin: 0 0 0 -20px;
+            width: auto;
+            height: 18vh;
+            font-size: 1.2em !important;
+            padding: 0 30% 0 20px !important;
+        }
+}
 @media only screen and (min-width: 358px) and (max-width: 576px) {
 
         /*HEADER*/
     .responsive-sm h1{
-        font-size: 1.5em !important;
+        font-size: 2em !important;
         text-shadow: -2px 2px 4px black;
         padding-right: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
     }
     .responsive-sm h2 {
         margin: 0 0 0 -20px;
         width: auto;
         height: 18vh;
         font-size: 1.2em !important;
-        padding: 0 15% 0 20px;
+        padding: 0 30% 0 20px !important;
     }
     .img-sf {
         background-image: url("img/header.jpeg");
@@ -836,7 +1129,7 @@ padding-right: 45%;
     }
     .banner-bando h3 {
         
-        color: #9cb400 !important;
+        color: #c7d40b !important;
         font-size: 1.4em !important;
         line-height: 1;
         margin-bottom: 0 !important;
@@ -899,7 +1192,7 @@ padding-right: 45%;
 
   .card-front {
     display: block;
-    background-color: #9cb400;
+    background-color: #c7d40b;
     position: absolute;
     top:0;
     left: 0;
@@ -917,36 +1210,7 @@ padding-right: 45%;
 .icon-agevola-front {
     margin: 12% auto -60px;
 }
-/* BANNER 2 */
-.banner {
-    background-position: center right -200px ;
-    height: 220px;
-    background-size: auto 220px;
-}
-.banner-sx-1 {
-    background: none;
-    height: 220px;
-    width: 100%;
-    line-height: 1.3;
-    padding-right: 0%;
-    padding-top: 0;
-}
-.banner-sx-1 p:first-child {
-    font-size: 1.5em !important;
-    font-weight: 800;
-    padding-right: 15%;
-    padding-left: 10px;
-}
-.txt-banner-2-secondary {
-    font-size: 1.05em !important ;
-    padding-left: 10px;
-    padding-right: 10%;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.btn-1 {
-    margin-left: 10px;
-}
+
 /*SEZIONE CHI SIAMO*/
 .chi-siamo {
     text-align: center;
@@ -965,27 +1229,45 @@ padding-right: 45%;
     line-height: 1.3;
 }
 
-/* BANNER 3 */
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 .banner-2 {
-    height: 550px;
-    background-image: url("img/banner-2-mobile.jpg");
-    background-size:  100% 250px;
-    background-position: right bottom;
-    width: 100%;
+    height: 600px;
+    background-image: url("img/banner-2.jpg");
+    background-size: auto 300px;
+    background-position: bottom right -70px; 
+    width: 100vw;
     background-repeat: no-repeat; 
-}
-.bottone-banner {
-    padding-top: 0;
-}
- .banner-sx-2 {
-    background:  #1a1a1b;
-    margin-top: 0px;
-    height: 300px;
-    padding: 0 20px 20px 0;
-    width: auto;
-    line-height: 1.2;
     text-align: center;
+}
+
+
+.bottone-banner {
+    position: relative;
+    top: 15px;
+    left: 0%;
+}
+
+ .banner-sx-2 { 
+    background: #212122 ;
+    height: 302px;
+    width: 100vw !important;
+
 } 
+.txt-banner-3-primary {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+.txt-banner-3-secondary {
+    font-size: 1.4em;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 
 /*FORM*/
 .check label{
@@ -1002,6 +1284,100 @@ footer {
     width: 100px;
 }
 }
+
+@media only screen and (min-width: 358px) and (max-width: 480px) {
+    .bottone-banner {
+        left: 0% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+    /* BANNER 2 */
+    .banner {
+        background-position: center right -200px ;
+        height: 220px;
+        background-size: auto 220px;
+    }
+    .banner-sx-1 {
+        background: none;
+        height: 220px;
+        width: 100%;
+        line-height: 1.3;
+        padding-right: 0%;
+        padding-top: 20px;
+    }
+    .txt-banner-2-primary {
+        font-size: 1.5em !important;
+        padding-right: 5% !important;
+    }
+    .txt-banner-2-secondary {
+        font-size: 1.1em !important ;
+        padding-right: 10% !important;
+    }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 479.5px) {
+    /* BANNER 2 */
+.banner {
+    height: 500px;
+    background-image: url("img/banner-1.jpg");
+    background-size: auto 250px;
+    background-position: bottom right -230px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+}
+.banner-sx-1 {
+    background-color: #dce4e5 ;
+    height: 250px;
+    width: 100vw;
+    margin-right: 0 ;
+    margin-left: 0 ;
+    padding-top: 40px !important;
+    padding-right: 0 !important;
+}
+.txt-banner-2-primary {
+    font-size: 1.5em;
+    width: 100%;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+}
+.txt-banner-2-secondary {
+    width: 100%;
+    font-size: 1.2em;
+    padding-right: 0 !important;
+    
+    margin-left: 0 !important;
+}
+.btn-1 {
+    margin-left: 0 !important;
+}
+}
+
+/* 
+@media only screen and (min-width: 359px) and (max-width: 424px) { */
+/* BANNER 2 */
+/*     .banner {
+    height: 220px;
+    background-position: center right -200px;
+    background-size: auto 220px;
+    }
+    .banner-sx-1 {
+    background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5f1 55%, #ffffff00 70%);
+    height: 220px;
+    width: 100%;
+    line-height: 1;
+    padding-right: 0%;
+    padding-top: 0;
+    }
+    .banner-sx-1 p {
+    font-size: 1.2em !important;
+    } 
+} */
+
 @media only screen and (min-width: 359px) and (max-width: 424px) {
     .parag-2 {
         margin-right: 0%;
@@ -1014,16 +1390,18 @@ footer {
 } */
     /*HEADER*/
 .responsive-sm h1{
-    font-size: 1.5em !important;
+    font-size: 1.4em !important;
     text-shadow: -2px 2px 4px black;
-    padding-right: 10%;
+    padding-right: 20%;
+    width: 100%;
 }
 .responsive-sm h2 {
     width: auto;
     height: 120px;
+    font-size: 1.2em;
     top: 250px;
     overflow: visible;
-    font-size: 1em !important;
+    font-size: 1.1em !important;
     padding-right: 5%;
 }
 .img-sf {
@@ -1056,7 +1434,7 @@ footer {
     padding-top: 10px;
 }
 .banner-bando h3 {
-    color: #9cb400 !important;
+    color: #c7d40b !important;
     font-size: 1.2em !important;
     line-height: 1;
 }
@@ -1134,23 +1512,7 @@ footer {
     height: 40px;
     float: right;
 }
-/* BANNER 2 */
-.banner {
-height: 220px;
-background-position: center right -200px;
-background-size: auto 220px;
-}
-.banner-sx-1 {
-background: linear-gradient(to right,  #dce4e5 25%,  #dce4e5f1 55%, #ffffff00 70%);
-height: 220px;
-width: 100%;
-line-height: 1;
-padding-right: 0%;
-padding-top: 0;
-}
-.banner-sx-1 p {
-font-size: 1.2em !important;
-}
+
 /*SEZIONE CHI SIAMO*/
 .chi-siamo {
 text-align: center;
@@ -1171,29 +1533,44 @@ line-height: 1.3;
 
 /* BANNER 3 */
 .banner-2 {
-height: 500px;
-background-image: url("img/banner-2-mobile.jpg");
-background-size:  100% 200px;
-background-position: right bottom;
-width: 100%;
-background-repeat: no-repeat; 
+    height: 620px;
+    background-image: url("img/banner-2.jpg");
+    background-size: auto 300px;
+    background-position: bottom right -160px;
+    width: 100vw;
+    background-repeat: no-repeat; 
+    margin: 0;
+    text-align: center;
+}
+ .banner-sx-2 {
+    background:#201E1F; 
+    height: 324px;
+    width: 100vw;
+    line-height: 1.2;
+    margin: 0px !important;
+    position: relative;
+    left: -12px;
+} 
+.txt-banner-3-primary {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.txt-banner-3-secondary {
+    font-size: 1.3em;
+    font-weight: 800;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .bottone-banner {
-padding-top: 0;
-padding-bottom: 10px;
+    position: relative;
+    top: 15px;
+    left: 0%;
 }
-.banner-2-txt {
-background-color:#ecf0f1;
-}
-.banner-sx-2 {
-background:  #262727;
-margin-top: 0px;
-height: 300px;
-padding: 0 20px 0 10px;
-width: auto;
-line-height: 1;
-text-align: center;
-} 
+
+
 /*FORM*/
 .check label{
 margin-top: -20px;
@@ -1208,3 +1585,34 @@ margin: 220px 0 0 0;
 width: 100px;
 }
 }
+
+@media only screen and (min-width: 1049px) and (max-width: 1199px) {
+    .banner-sx-1 { 
+        padding-top: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 1330px) and (max-width: 1400px) {
+    .txt-banner-2-primary {
+        padding-right: 60% !important;
+    }
+    .txt-banner-2-secondary {
+        padding-right: 65% !important;
+    }
+}
+.safari {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media only screen and (min-width: 2400px) {
+  .banner-sx-1 {
+    background: linear-gradient(to right,  #dce4e5 45%,  #dce4e5 72%, #ffffff00 75%);
+    height: 320px;
+    width: 100%;
+}
+  }
